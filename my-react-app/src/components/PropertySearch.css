@@ -1,0 +1,84 @@
+.property-search {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 24px;
+  padding: 0 12px;
+  transition: all 0.2s ease;
+  background-color: white;
+}
+
+.search-container.focused {
+  border-color: #4285f4;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #666;
+  font-style: normal;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  height: 44px;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.clear-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.clear-button:hover {
+  color: #333;
+}
+
+.search-help-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Style to override Google's autocomplete dropdown */
+.pac-container {
+  border-radius: 0 0 24px 24px;
+  margin-top: -1px;
+  box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+.pac-item {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.pac-item:hover {
+  background-color: #f5f5f5;
+}
+
+.pac-icon {
+  margin-top: 3px;
+}
+
+.pac-item-query {
+  font-size: 14px;
+  color: #333;
+}

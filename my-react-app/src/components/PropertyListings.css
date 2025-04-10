@@ -1,0 +1,60 @@
+.property-listings {
+  margin-top: 20px;
+}
+
+.listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.listings-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.find-comparables-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.find-comparables-button:hover {
+  background-color: #3367d6;
+}
+
+.listings-container {
+  margin-top: 15px;
+}
+
+.error-message {
+  padding: 15px;
+  background-color: #ffebee;
+  color: #c62828;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #666;
+  font-style: italic;
+}
+
+.no-properties-message {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #666;
+}

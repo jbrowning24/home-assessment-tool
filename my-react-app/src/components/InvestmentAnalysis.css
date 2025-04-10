@@ -1,0 +1,276 @@
+.investment-analysis {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.analysis-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.property-summary {
+  text-align: right;
+}
+
+.property-summary h3 {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  color: #4285f4;
+}
+
+.property-summary p {
+  margin: 0 0 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.property-specs {
+  font-size: 13px;
+  color: #777;
+}
+
+.separator {
+  margin: 0 5px;
+  color: #ccc;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.analysis-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.analysis-section h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Metrics Section */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.metric-value.highlight {
+  color: #4285f4;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Cash Flow Section */
+.cash-flow-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cash-flow-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cash-flow-row.highlight {
+  background-color: #e8f0fe;
+  font-weight: bold;
+}
+
+.cash-flow-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.cash-flow-value {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Cash Flow Chart */
+.cash-flow-chart-section {
+  margin-top: 25px;
+}
+
+.cash-flow-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.cash-flow-chart::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+.chart-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.chart-bar {
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: height 0.3s;
+}
+
+.chart-bar.positive {
+  background-color: #34a853;
+  border-radius: 3px 3px 0 0;
+}
+
+.chart-bar.negative {
+  background-color: #ea4335;
+  border-radius: 0 0 3px 3px;
+}
+
+.bar-value {
+  font-size: 10px;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  transform-origin: right bottom;
+  position: absolute;
+  top: -20px;
+}
+
+.bar-label {
+  position: absolute;
+  bottom: -25px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Recommendation Section */
+.recommendation-section {
+  margin-top: 25px;
+}
+
+.recommendation {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-icon {
+  font-size: 24px;
+}
+
+.recommendation-content h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.recommendation-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.recommendation.positive {
+  border-left: 4px solid #34a853;
+}
+
+.recommendation.positive h4 {
+  color: #34a853;
+}
+
+.recommendation.neutral {
+  border-left: 4px solid #fbbc05;
+}
+
+.recommendation.neutral h4 {
+  color: #fbbc05;
+}
+
+.recommendation.negative {
+  border-left: 4px solid #ea4335;
+}
+
+.recommendation.negative h4 {
+  color: #ea4335;
+}
